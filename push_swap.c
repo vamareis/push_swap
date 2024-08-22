@@ -42,6 +42,7 @@ t_stack	*ft_process(int argc, char **argv)
 	char	**args;
 	t_stack	*a;
 
+	a = NULL;
 	if (argc == 2)
 	{
 		args = ft_split(argv[1], 32);

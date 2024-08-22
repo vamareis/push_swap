@@ -95,6 +95,7 @@ int	check_args(int argc, char **argv)
 {
 	char	**args;
 
+	args = NULL;
 	if (argc < 2)
 		return (0);
 	if (argv[1][0] == '\0')

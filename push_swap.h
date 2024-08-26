@@ -32,6 +32,8 @@ int					ft_find_position_b(t_stack *b, int nbr);
 int					ft_find_index(t_stack *a, int nbr);
 void				sort_b_till_3(t_stack **a, t_stack **b);
 void				algorithm(t_stack **a, t_stack **b);
+void				sort_a(t_stack **a, t_stack **b);
+void				sort_b(t_stack **a, t_stack **b);
 void				sort_3_a(t_stack **a);
 void				sa(t_stack **a, int print);
 void				sb(t_stack **b, int print);

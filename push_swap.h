@@ -85,5 +85,6 @@ int					check_repeat_signs(char *str);
 int					check_nbr(char **arr);
 int					check_consecutive_signs(char **arr);
 int					check_args(int argc, char **argv);
+void				free_error(t_stack **a, t_stack **b, char *line);
 
 #endif

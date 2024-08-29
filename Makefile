@@ -33,7 +33,8 @@ OBJS = $(SRCS:.c=.o)
 BONUS_SRCS = checker.c algorithm.c cases_ab.c cases_ba.c check_errors.c \
              ft_lst_tools.c ft_split.c operations_1.c operations_2.c \
              push_swap_utils.c push_swap_utils_2.c rotate_and_push_ab.c \
-             rotate_and_push_ba.c rotate_type.c sort_3.c $(GNL_SRCS)
+             rotate_and_push_ba.c rotate_type.c sort_3.c free_error.c \
+			 $(GNL_SRCS)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
 # Rule to make the push_swap executable

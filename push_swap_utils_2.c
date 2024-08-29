@@ -108,5 +108,7 @@ int	check_args(int argc, char **argv)
 		ft_error();
 	if (!check_nbr(args) || !check_dup_arg(args))
 		ft_error();
+	if (argc == 2)
+		free_tab(args);
 	return (1);
 }

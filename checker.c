@@ -79,7 +79,7 @@ void	do_commands(t_stack **a, t_stack **b, char *ln)
 	else if (ln[0] == 'r' && ln[1] == 'r' && ln[2] == 'r' && ln[3] == '\n')
 		rrr(a, b, 0);
 	else
-		ft_error();
+		free_error(a, b, ln);
 }
 
 void	get_commands(t_stack **a, t_stack **b)

@@ -104,11 +104,12 @@ int	check_args(int argc, char **argv)
 		args = ft_split(argv[1], 32);
 	else if (argc > 2)
 		args = argv + 1;
-	if (!check_alpha(args) || !check_consecutive_signs(args))
+	if (!check_alpha(args) || !check_consecutive_signs(args)
+		|| !check_nbr(args) || !check_dup_arg(args))
+	{
+		if (argc == 2)
+			free_tab(args);
 		ft_error();
-	if (!check_nbr(args) || !check_dup_arg(args))
-		ft_error();
-	if (argc == 2)
-		free_tab(args);
+	}
 	return (1);
 }

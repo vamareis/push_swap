@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check_errors.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vamachad <vamachad@student.42lisboa.com>   +#+  +:+       +#+        */
+/*   By: vamachad <vamachad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 04:14:37 by vamachad          #+#    #+#             */
-/*   Updated: 2024/08/22 17:30:30 by vamachad         ###   ########.fr       */
+/*   Updated: 2024/09/02 22:10:04 by vamachad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	check_dup(t_stack *a)
 		current = a->next;
 		while (current)
 		{
-			if ((a->nbr == current->nbr))
+			if (a->nbr == current->nbr)
 				return (0);
 			current = current->next;
 		}

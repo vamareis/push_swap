@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap_utils_2.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vamachad <vamachad@student.42lisboa.com>   +#+  +:+       +#+        */
+/*   By: vamachad <vamachad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 04:19:48 by vamachad          #+#    #+#             */
-/*   Updated: 2024/07/15 11:17:32 by vamachad         ###   ########.fr       */
+/*   Updated: 2024/09/02 22:22:13 by vamachad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,5 +111,7 @@ int	check_args(int argc, char **argv)
 			free_tab(args);
 		ft_error();
 	}
+	if (argc == 2)
+		free_tab(args);
 	return (1);
 }

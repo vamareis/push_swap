@@ -106,9 +106,9 @@ int	main(int argc, char **argv)
 	a = ft_process(argc, argv);
 	b = NULL;
 	get_commands(&a, &b);
-	if (order_check_a(a))
+	if (order_check_a(a) && !b)
 		write(1, "OK\n", 3);
-	else if (!order_check_a(a))
+	else
 		write(1, "KO\n", 3);
 	free_lst(&a);
 	free_lst(&b);
